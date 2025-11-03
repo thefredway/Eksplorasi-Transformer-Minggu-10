@@ -165,34 +165,6 @@ Fungsi `plot_training_logs()` membuat 2 plot:
 - **Matplotlib**: Visualization
 - **KaggleHub**: Dataset download
 
-## 📝 Struktur File
-
-```
-Copy_of_Eksplorasi_Transformer_Minggu_10.ipynb
-├── Load Data
-├── Text Preprocessing
-│   ├── clean_string()
-│   ├── normalize_text()
-│   └── tokenize()
-├── Vocabulary Building
-│   └── Vocab class
-├── Dataset & DataLoader
-│   ├── TranslationDataset
-│   └── collate_fn()
-├── Model Architecture
-│   ├── PositionalEncoding
-│   └── TransformerModel
-├── Training Functions
-│   ├── generate_square_subsequent_mask()
-│   ├── compute_loss_and_acc()
-│   ├── train_one_epoch()
-│   ├── train_with_logging()
-│   └── plot_training_logs()
-├── Inference
-│   └── translate_sentence()
-└── Main Training Loop
-```
-
 ## 🎓 Konsep Penting
 
 ### 1. Attention Mechanism
@@ -228,12 +200,6 @@ Boolean mask untuk mengabaikan padding tokens dalam attention computation dan lo
 - 🔄 Attention visualization
 - 🔄 Subword tokenization (BPE/WordPiece)
 
-## 📚 Referensi
-
-1. Vaswani, A., et al. (2017). "Attention is All You Need". NeurIPS.
-2. PyTorch Documentation: [torch.nn.Transformer](https://pytorch.org/docs/stable/generated/torch.nn.Transformer.html)
-3. The Annotated Transformer: [Harvard NLP](http://nlp.seas.harvard.edu/annotated-transformer/)
-
 ## 👨‍💻 Penggunaan
 
 ### Prerequisites
@@ -255,17 +221,3 @@ Russian: привет как дела
 English: I love programming and coffee.
 Russian: я люблю программирование и кофе
 ```
-
-## 📄 License
-
-Educational project untuk eksplorasi Deep Learning.
-
-## 🙏 Acknowledgments
-
-- Dataset dari Kaggle user: hijest
-- Inspired by "Attention is All You Need" paper
-- PyTorch team untuk framework yang powerful
-
----
-
-**Catatan**: Proyek ini dibuat untuk tujuan pembelajaran dan eksplorasi arsitektur Transformer. Untuk production use, pertimbangkan menggunakan pre-trained models seperti MarianMT atau mBART.
